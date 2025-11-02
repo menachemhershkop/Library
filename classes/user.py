@@ -5,6 +5,6 @@ class User:
         self.name=name
         self.borrowed_books=borrowed_books
     def borrow_book(self,book:Book):
-        pass
+        self.borrowed_books=book
     def return_book(self,book:Book):
-        pass
+        self.borrowed_books.remove(book)
