@@ -5,5 +5,5 @@ class Book:
         self.author=str(author)
         self.isbn=str(isbn)
         self.is_available=is_available
-    def get_derails(self)-> str:
+    def get_details(self)-> str:
         return f'Name book: {self.title}, author: {self.author},number ID: {self.isbn} available: {self.is_available}'

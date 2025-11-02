@@ -1,1 +1,10 @@
-ECHO is on.
+class User:
+    '''User card'''
+    def __init__(self,user_id, name,borrowed_books:list[Book]):
+        self.user_id=user_id
+        self.name=name
+        self.borrowed_books=borrowed_books
+    def borrow_book(self,book:Book):
+        pass
+    def return_book(self,book:Book):
+        pass
