@@ -9,6 +9,8 @@ class Library:
         self.books=books
         self.users=users
     def register_user(self, user:User) -> None:
+        print(user)
+        print(self.users)
         self.users[user.user_id]=user
     def add_book(self,book:Book):
         self.books[book.isbn] =book
@@ -22,7 +24,7 @@ class Library:
 
     def perform_return(self,user_id:str,isbn:str):
         if user_id in self.users and isbn in self.books:
-            if self.books[book.is_available]= False:
+            if self.books[book.is_available]== False:
                 self.books[book.is_available]= True
                 self.users[user.borrowed_books] = isbn
                 Logger.log_action("Return", self.books)
